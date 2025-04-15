@@ -10,54 +10,56 @@
          font-weight: bold;
      }
      .auto-style1 {
-         width: 100%;
-     }
-     .auto-style2 {
-         height: 24px;
-     }
-     .auto-style4 {
-         height: 22px;
-         width: 236px;
-     }
-     .auto-style5 {
-         width: 236px;
+         width: 1229px;
      }
      .auto-style6 {
          height: 24px;
-         width: 236px;
-     }
-     .auto-style7 {
-         height: 22px;
-         width: 129px;
-     }
-     .auto-style8 {
-         width: 255px;
+         width: 210px;
      }
      .auto-style9 {
          height: 24px;
-         width: 255px;
+         width: 211px;
      }
-     .auto-style10 {
-         width: 236px;
+     .auto-style16 {
+         width: 210px;
+         height: 30px;
+     }
+     .auto-style17 {
+         width: 211px;
+         height: 30px;
+     }
+     .auto-style21 {
+         width: 81px;
+     }
+     .auto-style22 {
          height: 23px;
+         width: 81px;
      }
-     .auto-style11 {
-         width: 255px;
-         height: 23px;
+     .auto-style23 {
+         height: 30px;
+         width: 81px;
      }
-     .auto-style12 {
-         height: 23px;
-     }
-     .auto-style13 {
-         width: 129px;
-     }
-     .auto-style14 {
-         width: 129px;
-         height: 23px;
-     }
-     .auto-style15 {
+     .auto-style24 {
          height: 24px;
-         width: 129px;
+         width: 81px;
+     }
+     .auto-style25 {
+         width: 210px;
+     }
+     .auto-style26 {
+         height: 22px;
+         width: 211px;
+     }
+     .auto-style27 {
+         width: 211px;
+     }
+     .auto-style28 {
+         width: 210px;
+         height: 23px;
+     }
+     .auto-style29 {
+         width: 211px;
+         height: 23px;
      }
  </style>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -67,234 +69,238 @@
     <form id="form1" runat="server">
         <table class="auto-style1">
             <tr>
-                <td class="auto-style5" style="font-family: 'Arial Black'; font-weight: bold; font-size: small">&nbsp;</td>
-                <td class="auto-style4">&nbsp;</td>
-                <td aria-busy="False" class="auto-style7" style="font-family: 'Arial Black'; font-weight: bold; font-size: 12px">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style25" style="font-family: 'Arial Black'; font-weight: bold; font-size: small">&nbsp;</td>
+                <td class="auto-style26">&nbsp;</td>
+                <td aria-busy="False" class="auto-style26" style="font-family: 'Arial Black'; font-weight: bold; font-size: 12px">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style5" style="font-family: 'Arial Black'; font-weight: bold; font-size: small">&nbsp;</td>
-                <td class="auto-style4" style="font-family: Candara; font-size: small; font-weight: bold">Localidades</td>
-                <td aria-busy="False" class="auto-style7" style="font-family: 'Arial Black'; font-weight: bold; font-size: 12px">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style25" style="font-family: 'Arial Black'; font-weight: bold; font-size: small">&nbsp;</td>
+                <td class="auto-style26" style="font-family: Candara; font-size: small; font-weight: bold"><h2>Localidades</h2></td>
+                <td aria-busy="False" class="auto-style26" style="font-family: 'Arial Black'; font-weight: bold; font-size: 12px">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style5" style="font-family: Candara; font-size: small; font-weight: bold">Nombre de la localidad</td>
-                <td class="auto-style8">
+                <td class="auto-style25" style="font-family: Candara; font-size: small; font-weight: bold">Nombre de la Localidad:</td>
+                <td class="auto-style27">
                     <asp:TextBox ID="txtLocalidad" runat="server" Width="240px"></asp:TextBox>
                 </td>
-                <td class="auto-style13">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style27">
+                    <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="txtLocalidad">Ingrese localidad</asp:RequiredFieldValidator>
+                </td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style10"></td>
-                <td class="auto-style11"></td>
-                <td class="auto-style14"></td>
-                <td class="auto-style12"></td>
-                <td class="auto-style12"></td>
-                <td class="auto-style12"></td>
-                <td class="auto-style12"></td>
-                <td class="auto-style12"></td>
-                <td class="auto-style12"></td>
-                <td class="auto-style12"></td>
+                <td class="auto-style28"></td>
+                <td class="auto-style29"></td>
+                <td class="auto-style29"></td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
             </tr>
             <tr>
-                <td class="auto-style5">&nbsp;</td>
-                <td class="auto-style8">&nbsp;</td>
-                <td class="auto-style13">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style16"></td>
+                <td class="auto-style17">
+                    <asp:Button ID="btnGuardarLocalidad" runat="server" OnClick="btnGuardarLocalidad_Click" Text="Guardar Localidad" />
+                </td>
+                <td class="auto-style17"></td>
+                <td class="auto-style23"></td>
+                <td class="auto-style23"></td>
+                <td class="auto-style23"></td>
+                <td class="auto-style23"></td>
+                <td class="auto-style23"></td>
+                <td class="auto-style23"></td>
+                <td class="auto-style23"></td>
             </tr>
             <tr>
-                <td class="auto-style10"></td>
-                <td class="auto-style11"></td>
-                <td class="auto-style14"></td>
-                <td class="auto-style12"></td>
-                <td class="auto-style12"></td>
-                <td class="auto-style12"></td>
-                <td class="auto-style12"></td>
-                <td class="auto-style12"></td>
-                <td class="auto-style12"></td>
-                <td class="auto-style12"></td>
+                <td class="auto-style28"></td>
+                <td class="auto-style29"></td>
+                <td class="auto-style29"></td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
             </tr>
             <tr>
                 <td class="auto-style6"></td>
                 <td class="auto-style9"></td>
-                <td class="auto-style15"></td>
-                <td class="auto-style2"></td>
-                <td class="auto-style2"></td>
-                <td class="auto-style2"></td>
-                <td class="auto-style2"></td>
-                <td class="auto-style2"></td>
-                <td class="auto-style2"></td>
-                <td class="auto-style2"></td>
+                <td class="auto-style9"></td>
+                <td class="auto-style24"></td>
+                <td class="auto-style24"></td>
+                <td class="auto-style24"></td>
+                <td class="auto-style24"></td>
+                <td class="auto-style24"></td>
+                <td class="auto-style24"></td>
+                <td class="auto-style24"></td>
             </tr>
             <tr>
-                <td class="auto-style5">&nbsp;</td>
-                <td class="auto-style8">&nbsp;</td>
-                <td class="auto-style13">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style28"></td>
+                <td class="auto-style29"></td>
+                <td class="auto-style29"></td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
             </tr>
             <tr>
-                <td class="auto-style5">&nbsp;</td>
-                <td class="auto-style8">&nbsp;</td>
-                <td class="auto-style13">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style25">&nbsp;</td>
+                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style5">&nbsp;</td>
-                <td class="auto-style8">&nbsp;</td>
-                <td class="auto-style13">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style25">&nbsp;</td>
+                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style5">&nbsp;</td>
-                <td class="auto-style8">&nbsp;</td>
-                <td class="auto-style13">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style25">&nbsp;</td>
+                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style5">&nbsp;</td>
-                <td class="auto-style8">&nbsp;</td>
-                <td class="auto-style13">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style25">&nbsp;</td>
+                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style5">&nbsp;</td>
-                <td class="auto-style8">&nbsp;</td>
-                <td class="auto-style13">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style25">&nbsp;</td>
+                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style5">&nbsp;</td>
-                <td class="auto-style8">&nbsp;</td>
-                <td class="auto-style13">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style25">&nbsp;</td>
+                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style10"></td>
-                <td class="auto-style11"></td>
-                <td class="auto-style14"></td>
-                <td class="auto-style12"></td>
-                <td class="auto-style12"></td>
-                <td class="auto-style12"></td>
-                <td class="auto-style12"></td>
-                <td class="auto-style12"></td>
-                <td class="auto-style12"></td>
-                <td class="auto-style12"></td>
+                <td class="auto-style28"></td>
+                <td class="auto-style29"></td>
+                <td class="auto-style29"></td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
             </tr>
             <tr>
-                <td class="auto-style5">&nbsp;</td>
-                <td class="auto-style8">&nbsp;</td>
-                <td class="auto-style13">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style25">&nbsp;</td>
+                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style5">&nbsp;</td>
-                <td class="auto-style8">&nbsp;</td>
-                <td class="auto-style13">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style25">&nbsp;</td>
+                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style5">&nbsp;</td>
-                <td class="auto-style8">&nbsp;</td>
-                <td class="auto-style13">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style25">&nbsp;</td>
+                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style5">&nbsp;</td>
-                <td class="auto-style8">&nbsp;</td>
-                <td class="auto-style13">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style25">&nbsp;</td>
+                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
             </tr>
         </table>
 
