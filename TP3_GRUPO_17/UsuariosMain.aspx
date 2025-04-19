@@ -12,14 +12,6 @@
      .auto-style1 {
          width: 1229px;
      }
-     .auto-style6 {
-         height: 24px;
-         width: 210px;
-     }
-     .auto-style9 {
-         height: 24px;
-         width: 211px;
-     }
      .auto-style16 {
          width: 210px;
          height: 30px;
@@ -39,10 +31,6 @@
          height: 30px;
          width: 81px;
      }
-     .auto-style24 {
-         height: 24px;
-         width: 81px;
-     }
      .auto-style25 {
          width: 210px;
      }
@@ -60,6 +48,19 @@
      .auto-style29 {
          width: 211px;
          height: 23px;
+     }
+     .auto-style31 {
+         width: 210px;
+         height: 23px;
+         font-family: Candara;
+         font-weight: bold;
+         font-size: small;
+     }
+     .auto-style32 {
+         width: 210px;
+         font-family: Candara;
+         font-weight: bold;
+         font-size: small;
      }
  </style>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -147,20 +148,22 @@
                 <td class="auto-style22"></td>
             </tr>
             <tr>
-                <td class="auto-style6"></td>
-                <td class="auto-style9"></td>
-                <td class="auto-style9"></td>
-                <td class="auto-style24"></td>
-                <td class="auto-style24"></td>
-                <td class="auto-style24"></td>
-                <td class="auto-style24"></td>
-                <td class="auto-style24"></td>
-                <td class="auto-style24"></td>
-                <td class="auto-style24"></td>
+                <td class="auto-style25" style="font-family: 'Arial Black'; font-weight: bold; font-size: small">&nbsp;</td>
+                <td class="auto-style26" style="font-family: Candara; font-size: small; font-weight: bold"><h2>Usuarios</h2></td>
+                <td aria-busy="False" class="auto-style26" style="font-family: 'Arial Black'; font-weight: bold; font-size: 12px">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style28"></td>
-                <td class="auto-style29"></td>
+                <td class="auto-style31">Nombre de usuario:</td>
+                <td class="auto-style29">
+                    <asp:TextBox ID="txtNombreUsuario" runat="server" Width="240px"></asp:TextBox>
+                </td>
                 <td class="auto-style29"></td>
                 <td class="auto-style22"></td>
                 <td class="auto-style22"></td>
@@ -171,8 +174,10 @@
                 <td class="auto-style22"></td>
             </tr>
             <tr>
-                <td class="auto-style25">&nbsp;</td>
-                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style32">Contraseña:</td>
+                <td class="auto-style27">
+                    <asp:TextBox ID="txtContraseña" runat="server" Width="240px"></asp:TextBox>
+                </td>
                 <td class="auto-style27">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
