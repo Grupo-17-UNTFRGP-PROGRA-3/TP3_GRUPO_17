@@ -176,7 +176,7 @@
             <tr>
                 <td class="auto-style32">Contraseña:</td>
                 <td class="auto-style27">
-                    <asp:TextBox ID="txtContraseña" runat="server" Width="240px"></asp:TextBox>
+                    <asp:TextBox ID="txtContrasenia" runat="server" Width="240px"></asp:TextBox>
                 </td>
                 <td class="auto-style27">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
@@ -188,20 +188,10 @@
                 <td class="auto-style21">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style25">&nbsp;</td>
-                <td class="auto-style27">&nbsp;</td>
-                <td class="auto-style27">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style25">&nbsp;</td>
-                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style32">Repetir Contraseña:</td>
+                <td class="auto-style27">
+                    <asp:TextBox ID="txtValidarContrasenia" runat="server" Width="240px"></asp:TextBox>
+                </td>
                 <td class="auto-style27">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
@@ -212,8 +202,24 @@
                 <td class="auto-style21">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style25">&nbsp;</td>
+                <td class="auto-style32">Correo electronico:</td>
+                <td class="auto-style27" id="txtMail">
+                    <asp:TextBox ID="txtValidarContrasenia0" runat="server" Width="240px"></asp:TextBox>
+                </td>
                 <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style32">Codigo Postal:</td>
+                <td class="auto-style27" id="txtCp">
+                    <asp:TextBox ID="txtValidarContrasenia1" runat="server" Width="240px"></asp:TextBox>
+                </td>
                 <td class="auto-style27">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
