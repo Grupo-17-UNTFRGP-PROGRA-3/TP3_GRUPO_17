@@ -42,5 +42,10 @@ namespace TP3_GRUPO_17
                 }
             }
         }
+
+        protected void btnGuardarUsuario_Click(object sender, EventArgs e)
+        {
+            lblUsuario.Text = "Usuario guardado correctamente";
+        }
     }
 }

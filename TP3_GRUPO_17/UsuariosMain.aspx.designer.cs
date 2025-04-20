@@ -78,6 +78,15 @@ namespace TP3_GRUPO_17
         protected global::System.Web.UI.WebControls.TextBox txtContrasenia;
 
         /// <summary>
+        /// Control rfvContraseña.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvContraseña;
+
+        /// <summary>
         /// Control txtValidarContrasenia.
         /// </summary>
         /// <remarks>
@@ -85,6 +94,15 @@ namespace TP3_GRUPO_17
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtValidarContrasenia;
+
+        /// <summary>
+        /// Control cvContrasenias.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator cvContrasenias;
 
         /// <summary>
         /// Control txtCorreoElectronico.
@@ -130,6 +148,15 @@ namespace TP3_GRUPO_17
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnGuardarUsuario;
+
+        /// <summary>
+        /// Control lblUsuario.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblUsuario;
 
         /// <summary>
         /// Control btnIrInicio.

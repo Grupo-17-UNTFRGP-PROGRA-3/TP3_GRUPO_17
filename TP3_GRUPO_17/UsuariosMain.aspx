@@ -77,6 +77,25 @@
          width: 770px;
          height: 30px;
      }
+     .auto-style37 {
+         width: 210px;
+         font-family: Candara;
+         font-weight: bold;
+         font-size: small;
+         height: 29px;
+     }
+     .auto-style38 {
+         width: 211px;
+         height: 29px;
+     }
+     .auto-style39 {
+         width: 770px;
+         height: 29px;
+     }
+     .auto-style40 {
+         width: 81px;
+         height: 29px;
+     }
  </style>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     
@@ -193,25 +212,29 @@
                 <td class="auto-style22"></td>
             </tr>
             <tr>
-                <td class="auto-style32">Contraseña:</td>
-                <td class="auto-style27">
-                    <asp:TextBox ID="txtContrasenia" runat="server" Width="240px"></asp:TextBox>
+                <td class="auto-style37">Contraseña:</td>
+                <td class="auto-style38">
+                    <asp:TextBox ID="txtContrasenia" runat="server" Width="240px" TextMode="Password"></asp:TextBox>
                 </td>
-                <td class="auto-style34">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style39">
+                    <asp:RequiredFieldValidator ID="rfvContraseña" runat="server" ControlToValidate="txtContrasenia">Debe ingresar una contraseña</asp:RequiredFieldValidator>
+                </td>
+                <td class="auto-style40"></td>
+                <td class="auto-style40"></td>
+                <td class="auto-style40"></td>
+                <td class="auto-style40"></td>
+                <td class="auto-style40"></td>
+                <td class="auto-style40"></td>
+                <td class="auto-style40"></td>
             </tr>
             <tr>
                 <td class="auto-style32">Repetir Contraseña:</td>
                 <td class="auto-style27">
-                    <asp:TextBox ID="txtValidarContrasenia" runat="server" Width="240px"></asp:TextBox>
+                    <asp:TextBox ID="txtValidarContrasenia" runat="server" Width="240px" TextMode="Password"></asp:TextBox>
                 </td>
-                <td class="auto-style34">&nbsp;</td>
+                <td class="auto-style34">
+                    <asp:CompareValidator ID="cvContrasenias" runat="server" ControlToCompare="txtContrasenia" ControlToValidate="txtValidarContrasenia">Las contraseñas no coinciden</asp:CompareValidator>
+                </td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
@@ -284,7 +307,7 @@
             <tr>
                 <td class="auto-style28"></td>
                 <td class="auto-style29">
-                    <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="Grupo2" />
+                    <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="Grupo2" OnClick="btnGuardarUsuario_Click" />
                 </td>
                 <td class="auto-style35"></td>
                 <td class="auto-style22"></td>
@@ -296,7 +319,9 @@
                 <td class="auto-style22"></td>
             </tr>
             <tr>
-                <td class="auto-style25">&nbsp;</td>
+                <td class="auto-style25">
+                    <asp:Label ID="lblUsuario" runat="server"></asp:Label>
+                </td>
                 <td class="auto-style27">&nbsp;</td>
                 <td class="auto-style34">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
