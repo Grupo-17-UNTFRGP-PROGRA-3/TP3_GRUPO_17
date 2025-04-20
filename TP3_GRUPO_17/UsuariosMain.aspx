@@ -209,8 +209,10 @@
                     <asp:TextBox ID="txtCorreoElectronico" runat="server" Width="240px"></asp:TextBox>
                 </td>
                 <td class="auto-style27">
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
-                        ErrorMessage="RegularExpressionValidator" ValidationGroup="Grupo2" ControlToValidate="txtCorreoElectronico" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">Ingrese un correo válido</asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ID="revCorreoElectronico" runat="server" 
+                        ErrorMessage="RegularExpressionValidator" ValidationGroup="Grupo2" 
+                        ControlToValidate="txtCorreoElectronico" 
+                        ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">Ingrese un correo válido</asp:RegularExpressionValidator>
                 </td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
