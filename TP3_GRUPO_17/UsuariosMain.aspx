@@ -230,8 +230,11 @@
                 <td class="auto-style21">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style25">&nbsp;</td>
-                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style32">Localidades:</td>
+                <td class="auto-style27">
+                    <asp:DropDownList ID="ddlLocalidades" runat="server" Height="16px" Width="246px">
+                    </asp:DropDownList>
+                </td>
                 <td class="auto-style27">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
@@ -255,7 +258,9 @@
             </tr>
             <tr>
                 <td class="auto-style28"></td>
-                <td class="auto-style29"></td>
+                <td class="auto-style29">
+                    <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" />
+                </td>
                 <td class="auto-style29"></td>
                 <td class="auto-style22"></td>
                 <td class="auto-style22"></td>
@@ -278,7 +283,9 @@
                 <td class="auto-style21">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style25">&nbsp;</td>
+                <td class="auto-style25">
+                    <asp:Button ID="btnIrInicio" runat="server" Text="Ir a inicio .aspx" />
+                </td>
                 <td class="auto-style27">&nbsp;</td>
                 <td class="auto-style27">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
