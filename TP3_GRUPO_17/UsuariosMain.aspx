@@ -99,7 +99,8 @@
                     <asp:TextBox ID="txtLocalidad" runat="server" Width="240px"></asp:TextBox>
                 </td>
                 <td class="auto-style27">
-                    <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="txtLocalidad">Ingrese localidad</asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="txtLocalidad"
+                        ValidationGroup="Grupo1" >Ingrese localidad</asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
@@ -124,7 +125,8 @@
             <tr>
                 <td class="auto-style16"></td>
                 <td class="auto-style17">
-                    <asp:Button ID="btnGuardarLocalidad" runat="server" OnClick="btnGuardarLocalidad_Click" Text="Guardar Localidad" />
+                    <asp:Button ID="btnGuardarLocalidad" runat="server" OnClick="btnGuardarLocalidad_Click" 
+                        Text="Guardar Localidad" ValidationGroup="Grupo1" />
                 </td>
                 <td class="auto-style17"></td>
                 <td class="auto-style23"></td>
@@ -204,9 +206,12 @@
             <tr>
                 <td class="auto-style32">Correo electronico:</td>
                 <td class="auto-style27" id="txtMail">
-                    <asp:TextBox ID="txtValidarContrasenia0" runat="server" Width="240px"></asp:TextBox>
+                    <asp:TextBox ID="txtCorreoElectronico" runat="server" Width="240px"></asp:TextBox>
                 </td>
-                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style27">
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
+                        ErrorMessage="RegularExpressionValidator" ValidationGroup="Grupo2" ControlToValidate="txtCorreoElectronico" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">Ingrese un correo válido</asp:RegularExpressionValidator>
+                </td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
@@ -259,7 +264,7 @@
             <tr>
                 <td class="auto-style28"></td>
                 <td class="auto-style29">
-                    <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" />
+                    <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="Grupo2" />
                 </td>
                 <td class="auto-style29"></td>
                 <td class="auto-style22"></td>
