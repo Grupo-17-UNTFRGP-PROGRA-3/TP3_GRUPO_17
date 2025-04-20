@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -16,22 +17,30 @@ namespace TP3_GRUPO_17
 
         protected void btnGuardarLocalidad_Click(object sender, EventArgs e)
         {
-            if (LocalidadSeRepite())
+            if(cvLocalidadRepetida.IsValid == true)
             {
-                //Mostrar mensaje de error si la localidad se repite
-                return;
+                ddlLocalidades.Items.Add(txtLocalidad.Text.Trim());
             }
-
-            //Guardar localidad en dropdownlist
-
-            txtLocalidad.Text = string.Empty;
-            return;
+            else
+            {
+                cvLocalidadRepetida.Text = "La localidad ya existe. Por favor, ingrese una localidad diferente.";
+            }
+                txtLocalidad.Text = string.Empty;
         }
 
-        private bool LocalidadSeRepite()
+        protected void cvLocalidadRepetida_ServerValidate(object source, ServerValidateEventArgs args)
         {
-            // Verificar si la localidad existe en el dropwdownlist
-            return false;
+            foreach (ListItem item in ddlLocalidades.Items)
+            {
+                if (item.Text.Equals(args.Value.Trim(), StringComparison.OrdinalIgnoreCase))
+                {
+                    args.IsValid = false; // La localidad ya existe
+                }
+                else
+                {
+                    args.IsValid = true; // La localidad no existe
+                }
+            }
         }
     }
 }

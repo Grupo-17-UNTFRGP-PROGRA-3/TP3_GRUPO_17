@@ -62,6 +62,21 @@
          font-weight: bold;
          font-size: small;
      }
+     .auto-style33 {
+         height: 22px;
+         width: 770px;
+     }
+     .auto-style34 {
+         width: 770px;
+     }
+     .auto-style35 {
+         width: 770px;
+         height: 23px;
+     }
+     .auto-style36 {
+         width: 770px;
+         height: 30px;
+     }
  </style>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     
@@ -72,7 +87,7 @@
             <tr>
                 <td class="auto-style25" style="font-family: 'Arial Black'; font-weight: bold; font-size: small">&nbsp;</td>
                 <td class="auto-style26">&nbsp;</td>
-                <td aria-busy="False" class="auto-style26" style="font-family: 'Arial Black'; font-weight: bold; font-size: 12px">&nbsp;</td>
+                <td aria-busy="False" class="auto-style33" style="font-family: 'Arial Black'; font-weight: bold; font-size: 12px">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
@@ -84,7 +99,7 @@
             <tr>
                 <td class="auto-style25" style="font-family: 'Arial Black'; font-weight: bold; font-size: small">&nbsp;</td>
                 <td class="auto-style26" style="font-family: Candara; font-size: small; font-weight: bold"><h2>Localidades</h2></td>
-                <td aria-busy="False" class="auto-style26" style="font-family: 'Arial Black'; font-weight: bold; font-size: 12px">&nbsp;</td>
+                <td aria-busy="False" class="auto-style33" style="font-family: 'Arial Black'; font-weight: bold; font-size: 12px">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
@@ -96,9 +111,9 @@
             <tr>
                 <td class="auto-style25" style="font-family: Candara; font-size: small; font-weight: bold">Nombre de la Localidad:</td>
                 <td class="auto-style27">
-                    <asp:TextBox ID="txtLocalidad" runat="server" Width="240px"></asp:TextBox>
+                    <asp:TextBox ID="txtLocalidad" runat="server" Width="240px" ValidationGroup="Grupo1"></asp:TextBox>
                 </td>
-                <td class="auto-style27">
+                <td class="auto-style34">
                     <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="txtLocalidad"
                         ValidationGroup="Grupo1" >Ingrese localidad</asp:RequiredFieldValidator>
                 </td>
@@ -113,7 +128,9 @@
             <tr>
                 <td class="auto-style28"></td>
                 <td class="auto-style29"></td>
-                <td class="auto-style29"></td>
+                <td class="auto-style35">
+                    <asp:CustomValidator ID="cvLocalidadRepetida" runat="server" ControlToValidate="txtLocalidad" OnServerValidate="cvLocalidadRepetida_ServerValidate" ValidationGroup="Grupo1"></asp:CustomValidator>
+                </td>
                 <td class="auto-style22"></td>
                 <td class="auto-style22"></td>
                 <td class="auto-style22"></td>
@@ -128,7 +145,7 @@
                     <asp:Button ID="btnGuardarLocalidad" runat="server" OnClick="btnGuardarLocalidad_Click" 
                         Text="Guardar Localidad" ValidationGroup="Grupo1" />
                 </td>
-                <td class="auto-style17"></td>
+                <td class="auto-style36">&nbsp;</td>
                 <td class="auto-style23"></td>
                 <td class="auto-style23"></td>
                 <td class="auto-style23"></td>
@@ -140,7 +157,7 @@
             <tr>
                 <td class="auto-style28"></td>
                 <td class="auto-style29"></td>
-                <td class="auto-style29"></td>
+                <td class="auto-style35"></td>
                 <td class="auto-style22"></td>
                 <td class="auto-style22"></td>
                 <td class="auto-style22"></td>
@@ -152,7 +169,7 @@
             <tr>
                 <td class="auto-style25" style="font-family: 'Arial Black'; font-weight: bold; font-size: small">&nbsp;</td>
                 <td class="auto-style26" style="font-family: Candara; font-size: small; font-weight: bold"><h2>Usuarios</h2></td>
-                <td aria-busy="False" class="auto-style26" style="font-family: 'Arial Black'; font-weight: bold; font-size: 12px">&nbsp;</td>
+                <td aria-busy="False" class="auto-style33" style="font-family: 'Arial Black'; font-weight: bold; font-size: 12px">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
@@ -166,7 +183,7 @@
                 <td class="auto-style29">
                     <asp:TextBox ID="txtNombreUsuario" runat="server" Width="240px"></asp:TextBox>
                 </td>
-                <td class="auto-style29"></td>
+                <td class="auto-style35"></td>
                 <td class="auto-style22"></td>
                 <td class="auto-style22"></td>
                 <td class="auto-style22"></td>
@@ -180,7 +197,7 @@
                 <td class="auto-style27">
                     <asp:TextBox ID="txtContrasenia" runat="server" Width="240px"></asp:TextBox>
                 </td>
-                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style34">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
@@ -194,7 +211,7 @@
                 <td class="auto-style27">
                     <asp:TextBox ID="txtValidarContrasenia" runat="server" Width="240px"></asp:TextBox>
                 </td>
-                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style34">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
@@ -208,7 +225,7 @@
                 <td class="auto-style27" id="txtMail">
                     <asp:TextBox ID="txtCorreoElectronico" runat="server" Width="240px"></asp:TextBox>
                 </td>
-                <td class="auto-style27">
+                <td class="auto-style34">
                     <asp:RegularExpressionValidator ID="revCorreoElectronico" runat="server" 
                         ErrorMessage="RegularExpressionValidator" ValidationGroup="Grupo2" 
                         ControlToValidate="txtCorreoElectronico" 
@@ -227,7 +244,7 @@
                 <td class="auto-style27" id="txtCp">
                     <asp:TextBox ID="txtValidarContrasenia1" runat="server" Width="240px"></asp:TextBox>
                 </td>
-                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style34">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
@@ -240,9 +257,10 @@
                 <td class="auto-style32">Localidades:</td>
                 <td class="auto-style27">
                     <asp:DropDownList ID="ddlLocalidades" runat="server" Height="16px" Width="246px">
+                        <asp:ListItem Value="0">(Seleccione localidad)</asp:ListItem>
                     </asp:DropDownList>
                 </td>
-                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style34">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
@@ -254,7 +272,7 @@
             <tr>
                 <td class="auto-style25">&nbsp;</td>
                 <td class="auto-style27">&nbsp;</td>
-                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style34">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
@@ -268,7 +286,7 @@
                 <td class="auto-style29">
                     <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="Grupo2" />
                 </td>
-                <td class="auto-style29"></td>
+                <td class="auto-style35"></td>
                 <td class="auto-style22"></td>
                 <td class="auto-style22"></td>
                 <td class="auto-style22"></td>
@@ -280,7 +298,7 @@
             <tr>
                 <td class="auto-style25">&nbsp;</td>
                 <td class="auto-style27">&nbsp;</td>
-                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style34">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
@@ -294,7 +312,7 @@
                     <asp:Button ID="btnIrInicio" runat="server" Text="Ir a inicio .aspx" />
                 </td>
                 <td class="auto-style27">&nbsp;</td>
-                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style34">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
@@ -306,7 +324,7 @@
             <tr>
                 <td class="auto-style25">&nbsp;</td>
                 <td class="auto-style27">&nbsp;</td>
-                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style34">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
@@ -318,7 +336,7 @@
             <tr>
                 <td class="auto-style25">&nbsp;</td>
                 <td class="auto-style27">&nbsp;</td>
-                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style34">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
