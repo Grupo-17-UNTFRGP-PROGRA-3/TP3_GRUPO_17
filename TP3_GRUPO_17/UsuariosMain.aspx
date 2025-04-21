@@ -314,12 +314,14 @@
                 <td class="auto-style21">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style28"></td>
+                <td class="auto-style28">
+                    <asp:Label ID="lblUsuario" runat="server"></asp:Label>
+                </td>
                 <td class="auto-style29">
                     <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="Grupo2" OnClick="btnGuardarUsuario_Click" />
                 </td>
                 <td class="auto-style35">
-                    <asp:Label ID="lblUsuario" runat="server"></asp:Label>
+                    <asp:Label ID="lblBienvenida" runat="server"></asp:Label>
                 </td>
                 <td class="auto-style22"></td>
                 <td class="auto-style22"></td>

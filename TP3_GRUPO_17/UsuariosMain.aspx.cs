@@ -44,6 +44,8 @@ namespace TP3_GRUPO_17
         protected void btnGuardarUsuario_Click(object sender, EventArgs e)
         {
             lblUsuario.Text = "Usuario guardado correctamente";
+
+            lblBienvenida.Text = "Bienvenido " + txtNombreUsuario.Text.Trim();
         }
 
         protected void btnIrInicio_Click(object sender, EventArgs e)

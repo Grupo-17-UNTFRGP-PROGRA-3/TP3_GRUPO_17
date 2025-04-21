@@ -150,6 +150,15 @@ namespace TP3_GRUPO_17
         protected global::System.Web.UI.WebControls.DropDownList ddlLocalidades;
 
         /// <summary>
+        /// lblUsuario control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblUsuario;
+
+        /// <summary>
         /// btnGuardarUsuario control.
         /// </summary>
         /// <remarks>
@@ -159,13 +168,13 @@ namespace TP3_GRUPO_17
         protected global::System.Web.UI.WebControls.Button btnGuardarUsuario;
 
         /// <summary>
-        /// lblUsuario control.
+        /// lblBienvenida control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblUsuario;
+        protected global::System.Web.UI.WebControls.Label lblBienvenida;
 
         /// <summary>
         /// btnIrInicio control.
