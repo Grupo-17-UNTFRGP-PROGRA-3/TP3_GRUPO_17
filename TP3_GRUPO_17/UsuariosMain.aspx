@@ -96,17 +96,6 @@
          width: 81px;
          height: 29px;
      }
-     .auto-style41 {
-         width: 210px;
-         font-family: Candara;
-         font-weight: bold;
-         font-size: small;
-         height: 26px;
-     }
-     .auto-style42 {
-         width: 211px;
-         height: 26px;
-     }
      .auto-style43 {
          width: 770px;
          height: 26px;
@@ -270,8 +259,7 @@
                     <asp:TextBox ID="txtCorreoElectronico" runat="server" Width="240px"></asp:TextBox>
                 </td>
                 <td class="auto-style34">
-                    <asp:RegularExpressionValidator ID="revCorreoElectronico" runat="server" 
-                        ErrorMessage="RegularExpressionValidator" ValidationGroup="Grupo2" 
+                    <asp:RegularExpressionValidator ID="revCorreoElectronico" runat="server" ValidationGroup="Grupo2" 
                         ControlToValidate="txtCorreoElectronico" 
                         ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">Ingrese un correo válido</asp:RegularExpressionValidator>
                 </td>
@@ -330,7 +318,9 @@
                 <td class="auto-style29">
                     <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="Grupo2" OnClick="btnGuardarUsuario_Click" />
                 </td>
-                <td class="auto-style35"></td>
+                <td class="auto-style35">
+                    <asp:Label ID="lblUsuario" runat="server"></asp:Label>
+                </td>
                 <td class="auto-style22"></td>
                 <td class="auto-style22"></td>
                 <td class="auto-style22"></td>
@@ -341,8 +331,7 @@
             </tr>
             <tr>
                 <td class="auto-style25">
-                    <asp:Label ID="lblUsuario" runat="server"></asp:Label>
-                </td>
+                    &nbsp;</td>
                 <td class="auto-style27">&nbsp;</td>
                 <td class="auto-style34">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
@@ -355,7 +344,7 @@
             </tr>
             <tr>
                 <td class="auto-style25">
-                    <asp:Button ID="btnIrInicio" runat="server" Text="Ir a inicio .aspx" />
+                    <asp:Button ID="btnIrInicio" runat="server" Text="Ir a inicio .aspx" OnClick="btnIrInicio_Click" ValidationGroup="BotonAislado" />
                 </td>
                 <td class="auto-style27">&nbsp;</td>
                 <td class="auto-style34">&nbsp;</td>

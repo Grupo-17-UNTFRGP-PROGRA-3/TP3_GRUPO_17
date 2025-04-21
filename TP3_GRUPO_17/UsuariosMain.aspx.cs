@@ -45,5 +45,10 @@ namespace TP3_GRUPO_17
         {
             lblUsuario.Text = "Usuario guardado correctamente";
         }
+
+        protected void btnIrInicio_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Inicio.aspx");
+        }
     }
 }
