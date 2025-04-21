@@ -211,7 +211,7 @@
                     <asp:TextBox ID="txtNombreUsuario" runat="server" Width="240px"></asp:TextBox>
                 </td>
                 <td class="auto-style35">
-                    <asp:RequiredFieldValidator ID="rfvNombreUsuario" runat="server" ControlToValidate="txtNombreUsuario">Debe ingresar un nombre</asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="rfvNombreUsuario" runat="server" ControlToValidate="txtNombreUsuario" ValidationGroup="Grupo2">Debe ingresar un nombre</asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style22"></td>
                 <td class="auto-style22"></td>
@@ -227,7 +227,7 @@
                     <asp:TextBox ID="txtContrasenia" runat="server" Width="240px" TextMode="Password"></asp:TextBox>
                 </td>
                 <td class="auto-style39">
-                    <asp:RequiredFieldValidator ID="rfvContraseña" runat="server" ControlToValidate="txtContrasenia">Debe ingresar una contraseña</asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="rfvContraseña" runat="server" ControlToValidate="txtContrasenia" ValidationGroup="Grupo2">Debe ingresar una contraseña</asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style40"></td>
                 <td class="auto-style40"></td>
@@ -243,7 +243,7 @@
                     <asp:TextBox ID="txtValidarContrasenia" runat="server" Width="240px" TextMode="Password"></asp:TextBox>
                 </td>
                 <td class="auto-style34">
-                    <asp:CompareValidator ID="cvContrasenias" runat="server" ControlToCompare="txtContrasenia" ControlToValidate="txtValidarContrasenia">Las contraseñas no coinciden</asp:CompareValidator>
+                    <asp:CompareValidator ID="cvContrasenias" runat="server" ControlToCompare="txtContrasenia" ControlToValidate="txtValidarContrasenia" ValidationGroup="Grupo2">Las contraseñas no coinciden</asp:CompareValidator>
                 </td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
