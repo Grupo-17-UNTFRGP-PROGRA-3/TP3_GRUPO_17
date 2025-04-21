@@ -25,7 +25,8 @@ namespace TP3_GRUPO_17
             {
                 cvLocalidadRepetida.Text = "La localidad ya existe. Por favor, ingrese una localidad diferente.";
             }
-                txtLocalidad.Text = string.Empty;
+               
+            txtLocalidad.Text = string.Empty;
         }
 
         protected void cvLocalidadRepetida_ServerValidate(object source, ServerValidateEventArgs args)
@@ -35,10 +36,7 @@ namespace TP3_GRUPO_17
                 if (item.Text.Equals(args.Value.Trim(), StringComparison.OrdinalIgnoreCase))
                 {
                     args.IsValid = false; // La localidad ya existe
-                }
-                else
-                {
-                    args.IsValid = true; // La localidad no existe
+                    break;
                 }
             }
         }

@@ -96,6 +96,25 @@
          width: 81px;
          height: 29px;
      }
+     .auto-style41 {
+         width: 210px;
+         font-family: Candara;
+         font-weight: bold;
+         font-size: small;
+         height: 26px;
+     }
+     .auto-style42 {
+         width: 211px;
+         height: 26px;
+     }
+     .auto-style43 {
+         width: 770px;
+         height: 26px;
+     }
+     .auto-style44 {
+         width: 81px;
+         height: 26px;
+     }
  </style>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     
@@ -202,7 +221,9 @@
                 <td class="auto-style29">
                     <asp:TextBox ID="txtNombreUsuario" runat="server" Width="240px"></asp:TextBox>
                 </td>
-                <td class="auto-style35"></td>
+                <td class="auto-style35">
+                    <asp:RequiredFieldValidator ID="rfvNombreUsuario" runat="server" ControlToValidate="txtNombreUsuario">Debe ingresar un nombre</asp:RequiredFieldValidator>
+                </td>
                 <td class="auto-style22"></td>
                 <td class="auto-style22"></td>
                 <td class="auto-style22"></td>
@@ -279,18 +300,18 @@
             <tr>
                 <td class="auto-style32">Localidades:</td>
                 <td class="auto-style27">
-                    <asp:DropDownList ID="ddlLocalidades" runat="server" Height="16px" Width="246px">
+                    <asp:DropDownList ID="ddlLocalidades" runat="server" Height="26px" Width="240px" style="margin-bottom: 9px">
                         <asp:ListItem Value="0">(Seleccione localidad)</asp:ListItem>
                     </asp:DropDownList>
                 </td>
-                <td class="auto-style34">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style43"></td>
+                <td class="auto-style44"></td>
+                <td class="auto-style44"></td>
+                <td class="auto-style44"></td>
+                <td class="auto-style44"></td>
+                <td class="auto-style44"></td>
+                <td class="auto-style44"></td>
+                <td class="auto-style44"></td>
             </tr>
             <tr>
                 <td class="auto-style25">&nbsp;</td>
