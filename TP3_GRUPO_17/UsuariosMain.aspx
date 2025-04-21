@@ -243,7 +243,7 @@
                     <asp:TextBox ID="txtValidarContrasenia" runat="server" Width="240px" TextMode="Password"></asp:TextBox>
                 </td>
                 <td class="auto-style34">
-                    <asp:CompareValidator ID="cvContrasenias" runat="server" ControlToCompare="txtContrasenia" ControlToValidate="txtValidarContrasenia" ValidationGroup="Grupo2">Las contraseñas no coinciden</asp:CompareValidator>
+                    <asp:CompareValidator ID="cvContrasenias" runat="server" ControlToCompare="txtValidarContrasenia" ControlToValidate="txtContrasenia" ValidationGroup="Grupo2">Las contraseñas no coinciden</asp:CompareValidator>
                 </td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
@@ -296,7 +296,9 @@
                         <asp:ListItem Value="0">(Seleccione localidad)</asp:ListItem>
                     </asp:DropDownList>
                 </td>
-                <td class="auto-style43"></td>
+                <td class="auto-style43">
+                    <asp:RequiredFieldValidator ID="rfvLocalidades" runat="server" ControlToValidate="ddlLocalidades" InitialValue="0" ValidationGroup="Grupo2">Ingrese una localidad</asp:RequiredFieldValidator>
+                </td>
                 <td class="auto-style44"></td>
                 <td class="auto-style44"></td>
                 <td class="auto-style44"></td>
