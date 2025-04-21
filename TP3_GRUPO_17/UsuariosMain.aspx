@@ -278,7 +278,7 @@
             <tr>
                 <td class="auto-style32">Codigo Postal:</td>
                 <td class="auto-style27" id="txtCp">
-                    <asp:TextBox ID="txtCodPostal" runat="server" Width="240px"></asp:TextBox>
+                    <asp:TextBox ID="txtCodPostal" runat="server" Width="240px" MaxLength="4"></asp:TextBox>
                 </td>
                 <td class="auto-style34">
                     <asp:RequiredFieldValidator ID="rfvCodPostal" runat="server" ControlToValidate="txtCodPostal" Display="Dynamic" ErrorMessage="RequiredFieldValidator" ValidationGroup="Grupo2">Ingrese un código postal</asp:RequiredFieldValidator>
