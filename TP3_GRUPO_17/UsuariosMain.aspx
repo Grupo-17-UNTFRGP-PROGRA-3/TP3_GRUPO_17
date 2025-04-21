@@ -278,9 +278,12 @@
             <tr>
                 <td class="auto-style32">Codigo Postal:</td>
                 <td class="auto-style27" id="txtCp">
-                    <asp:TextBox ID="txtValidarContrasenia1" runat="server" Width="240px"></asp:TextBox>
+                    <asp:TextBox ID="txtCodPostal" runat="server" Width="240px"></asp:TextBox>
                 </td>
-                <td class="auto-style34">&nbsp;</td>
+                <td class="auto-style34">
+                    <asp:RequiredFieldValidator ID="rfvCodPostal" runat="server" ControlToValidate="txtCodPostal" Display="Dynamic" ErrorMessage="RequiredFieldValidator" ValidationGroup="Grupo2">Ingrese un código postal</asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="revCodPostal" runat="server" ControlToValidate="txtCodPostal" Display="Dynamic" ErrorMessage="RegularExpressionValidator" ValidationExpression="^\d{4}$" ValidationGroup="Grupo2">Ingrese un código postal válido (4 dígitos)</asp:RegularExpressionValidator>
+                </td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
