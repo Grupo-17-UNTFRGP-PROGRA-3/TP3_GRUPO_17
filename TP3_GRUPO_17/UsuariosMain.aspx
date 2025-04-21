@@ -259,9 +259,13 @@
                     <asp:TextBox ID="txtCorreoElectronico" runat="server" Width="240px"></asp:TextBox>
                 </td>
                 <td class="auto-style34">
+                    <div>
+                    <asp:RequiredFieldValidator Display="Dynamic" ID="rfvCorreoElectronico" runat="server" ValidationGroup="Grupo2"
+                        ControlToValidate="txtCorreoElectronico">Ingrese un correo electrónico</asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="revCorreoElectronico" runat="server" ValidationGroup="Grupo2" 
                         ControlToValidate="txtCorreoElectronico" 
                         ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">Ingrese un correo válido</asp:RegularExpressionValidator>
+                    </div>
                 </td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
